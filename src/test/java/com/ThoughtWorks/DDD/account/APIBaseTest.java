@@ -2,6 +2,7 @@ package com.ThoughtWorks.DDD.account;
 
 
 import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -28,5 +29,10 @@ public class APIBaseTest {
                 MockMvcBuilders.
                         webAppContextSetup(this.wac).
                         build();
+    }
+
+    @Test
+    public void placeHolder() {
+
     }
 }

@@ -1,0 +1,20 @@
+version: '3'
+
+networks:
+    petstoreinfrastructure_petshop-network:
+      external:
+        name: petstoreinfrastructure_petshop-network
+
+
+services:
+  account:
+    build: .
+    ports:
+        - 11092:9092
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - server.port=9092
+    external_links:
+          - petstoreinfrastructure_petshop-mysql_1:mysqlhost
+    networks:
+         - petstoreinfrastructure_petshop-network
