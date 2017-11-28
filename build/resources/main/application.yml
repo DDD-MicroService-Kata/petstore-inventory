@@ -1,0 +1,9 @@
+server:
+  port: 9006
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: inventory
+logging.level.project.user.UserClient: DEBUG

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter-consul-config:1.2.1.RELEASE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-consul-config/1.2.1.RELEASE/93f3a8fb3d874bccac19324ebcedfabcce28b3/spring-cloud-starter-consul-config-1.2.1.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-consul-config/1.2.1.RELEASE/675c287c7bf73b095966d9d588e40b4fb9d5dd97/spring-cloud-starter-consul-config-1.2.1.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

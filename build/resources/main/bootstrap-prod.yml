@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: inventory
+  cloud:
+    consul:
+      host: consul
+      port: 8500
