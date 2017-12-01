@@ -21,14 +21,17 @@ public class UserFacade {
 
     private final UserRepository userRepository;
 
+    private final SampleClient sampleClient;
+
     @Autowired
-    public UserFacade(UserRepository userRepository) {
+    public UserFacade(UserRepository userRepository, SampleClient sampleClient) {
         this.userRepository = userRepository;
+        this.sampleClient = sampleClient;
     }
 
     @GetMapping
     public final String demo(){
-        return "";
+        return "demo";
     }
 
     @PostMapping
@@ -42,6 +45,11 @@ public class UserFacade {
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public final @ResponseBody User findById(@PathVariable("id") final long id) {
         return userRepository.findOne(id);
+    }
+
+    @GetMapping(value = "/sample")
+    public final String CallServiceSample() {
+        return sampleClient.choose();
     }
 }
 
