@@ -3,3 +3,7 @@ spring:
     url: jdbc:mysql://mysqlhost:3306/petstore_account
     username: root
     password: dev
+  cloud:
+    consul:
+      discovery:
+        instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}

@@ -16,5 +16,6 @@ services:
       - server.port=9092
     external_links:
           - petstoreinfrastructure_petshop-mysql_1:mysqlhost
+          - petstoreinfrastructure_petshop-consul_1:consul
     networks:
          - petstoreinfrastructure_petshop-network

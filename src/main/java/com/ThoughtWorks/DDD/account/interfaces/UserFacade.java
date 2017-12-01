@@ -33,9 +33,9 @@ public class UserFacade {
 
     @PostMapping
     public final ResponseEntity createUser(@RequestBody final User user){
-        userRepository.save(user);
+        User userAfterSaved = userRepository.save(user);
         HttpHeaders headers = new HttpHeaders();
-        headers.setLocation(URI.create(String.format("/api/users/%d", user.getId())));
+        headers.setLocation(URI.create(String.format("/api/users/%d", userAfterSaved.getId())));
         return new ResponseEntity(headers, HttpStatus.CREATED);
     }
 
