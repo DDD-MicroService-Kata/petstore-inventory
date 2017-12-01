@@ -6,4 +6,4 @@ spring:
   cloud:
     consul:
       discovery:
-        instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+        instanceId: ${spring.application.name}
