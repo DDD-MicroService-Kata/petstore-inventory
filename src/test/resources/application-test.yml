@@ -1,2 +1,5 @@
+
 flyway:
   enabled: false
+server:
+  port: 9016

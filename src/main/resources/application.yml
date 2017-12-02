@@ -6,3 +6,4 @@ spring:
     active: local
   application:
     name: account
+logging.level.project.user.UserClient: DEBUG
