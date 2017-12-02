@@ -1,4 +1,4 @@
-package com.ThoughtWorks.DDD.Inventory;
+package com.ThoughtWorks.DDD.Inventory.e2e;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -24,10 +24,10 @@ public class APIBaseTest {
     @Autowired
     private WebApplicationContext wac;
 
-    protected MockMvc mockMvc;
+    MockMvc mockMvc;
 
     @Autowired
-    protected ObjectMapper objectMapper;
+    ObjectMapper objectMapper;
 
     @Before
     public void baseBefore() {

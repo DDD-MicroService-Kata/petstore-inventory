@@ -1,0 +1,2 @@
+INSERT INTO `shop` VALUES(uuid(), 'CN BEIJING');
+INSERT INTO `shop` VALUES(uuid(), 'NS AUCKLAND');
