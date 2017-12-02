@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: inventory
-  profiles:
-    active: local
