@@ -5,5 +5,5 @@ spring:
   profiles:
     active: local
   application:
-    name: account
+    name: inventory
 logging.level.project.user.UserClient: DEBUG

@@ -1,4 +1,4 @@
-package com.ThoughtWorks.DDD.account;
+package com.ThoughtWorks.DDD.Inventory;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;

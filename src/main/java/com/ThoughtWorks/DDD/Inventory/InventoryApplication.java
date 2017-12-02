@@ -1,4 +1,4 @@
-package com.ThoughtWorks.DDD.account;
+package com.ThoughtWorks.DDD.Inventory;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,10 +14,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @SpringBootApplication
 @EnableFeignClients
-public class AccountApplication {
+public class InventoryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AccountApplication.class, args);
+		SpringApplication.run(InventoryApplication.class, args);
 	}
 
 	@Bean

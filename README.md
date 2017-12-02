@@ -1,2 +1,2 @@
-# petstore-account
+# petstore-inventory
 
