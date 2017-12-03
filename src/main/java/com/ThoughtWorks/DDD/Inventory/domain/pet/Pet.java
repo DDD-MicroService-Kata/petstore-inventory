@@ -38,4 +38,8 @@ public class Pet {
     public PetStatus getPetStatus() {
         return petStatus;
     }
+
+    public void locked() {
+        this.petStatus = PetStatus.Locked;
+    }
 }

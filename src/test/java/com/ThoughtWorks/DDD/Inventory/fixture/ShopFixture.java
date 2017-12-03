@@ -19,3 +19,4 @@ public class ShopFixture {
         return this.repository.save(new Shop(shopName));
     }
 }
+

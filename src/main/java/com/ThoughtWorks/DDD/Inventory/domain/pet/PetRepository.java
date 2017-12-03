@@ -8,5 +8,7 @@ import java.util.List;
 public interface PetRepository {
     public Pet save(Pet pet);
     public List<Pet> findByShopId(String shopId);
+    public Pet findOne(String id);
+    public List<Pet> findAll();
 }
 
