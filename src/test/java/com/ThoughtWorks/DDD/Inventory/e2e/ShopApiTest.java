@@ -1,13 +1,13 @@
 package com.ThoughtWorks.DDD.Inventory.e2e;
 
 
-import com.ThoughtWorks.DDD.Inventory.domain.shop.Shop;
-import com.ThoughtWorks.DDD.Inventory.domain.shop.ShopRepository;
+import com.ThoughtWorks.DDD.Inventory.fixture.ShopFixture;
 import com.ThoughtWorks.DDD.Inventory.interfaces.DTO.ShopResponse;
 import com.fasterxml.jackson.core.type.TypeReference;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -20,12 +20,13 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class ShopApiTest extends APIBaseTest {
 
     @Autowired
-    private ShopRepository repository;
+    private ShopFixture shopFixture;
+
     private String shopName = "NST center";
 
     @Before
     public void init(){
-        repository.save(new Shop(shopName));
+        shopFixture.createShop(shopName);
     }
 
     @Test
