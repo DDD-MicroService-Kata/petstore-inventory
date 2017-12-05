@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/pets/{petId}/status")
+@RequestMapping("/api/pets/status")
 public class PetStatusFacade {
     private final PetRepository petRepository;
     private final PetAssembler petAssembler;
@@ -32,8 +32,8 @@ public class PetStatusFacade {
     }
 
     @PutMapping
-    public final ResponseEntity updateStatus(@PathVariable("petId") String petId, @RequestBody PetStatusRequest petStatusRequest) {
-        Pet pet = petRepository.findOne(petId);
+    public final ResponseEntity updateStatus(@RequestBody PetStatusRequest petStatusRequest) {
+        Pet pet = petRepository.findOne(petStatusRequest.getId());
         pet.locked();
         return new ResponseEntity(HttpStatus.OK);
     }

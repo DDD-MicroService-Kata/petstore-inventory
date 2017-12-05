@@ -45,7 +45,7 @@ public class PetStatusApiTest extends APIBaseTest {
     @Test
     public void should_update_status() throws Exception {
         String petName = "pet1";
-        PetStatusRequest request = new PetStatusRequest(PetStatus.Locked);
+        PetStatusRequest request = new PetStatusRequest(pet.getId(), PetStatus.Locked);
         this.mockMvc.perform(put(format("/api/pets/%s/status", pet.getId())).
                 contentType(APPLICATION_JSON_UTF8).
                 content(this.objectMapper.writeValueAsString(request))).
